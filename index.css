@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background: blueviolet;
+}
+.contain{
+    background: #fff;
+    color: black;
+    width: 400px;
+    padding: 25px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+}
+.contain h3{
+    font-weight: 600;
+    margin-left: 5px;
+    padding: 13px;
+}
+.contain input{
+    margin-left: 15px;
+    border: 1px solid #494eea;
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+}
+.contain button{
+    width: 70%;
+    height: 50px;
+    background: rgb(181, 21, 181);
+    color: #fff;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 45px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.contain button:hover{
+    background: #0f138b;
+
+}
+
+#Imgbox{
+    width: 200px;
+    max-height: 0;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: max-height 0.1s;
+}
+#Imgbox img{
+    width: 100%;
+    padding: 10px;
+}
+#Imgbox.show-img{
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
+}
+.error{
+    animation: shake 0.1s linear 10;
+}
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
